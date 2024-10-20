@@ -28,10 +28,14 @@
     "status" : "processing"
 }
 ```
-2.  주문 조회
+
+2. 전체 주문 조회
+- GET /
+
+4.  주문 조회
 - GET /selectOrder?orderId=
 
-3.  주문 상태 변경
+4.  주문 상태 변경
 - PUT /updateOrder
 ```json
 {
@@ -39,7 +43,7 @@
     "status" : "CANCELED"
 }
 ```
-4.  주문 삭제
+5.  주문 삭제
 - DELETE /deleteOrder
 ```json
 {
