@@ -15,16 +15,7 @@
 - **AOP (Aspect-Oriented Programming)**
 - **Custom Exception Handling**
 
-## 사용 방법
-1. 이 저장소를 클론합니다:
-   ```bash
-   git clone https://github.com/your-username/order-management-system.git
-   cd order-management-system
-
-2. 프로젝트를 빌드하고 실행합니다.
-
-3. API 사용 예시
-
+## API 사용 예시
 - 주문 추가
 POST /save
 {
