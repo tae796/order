@@ -25,7 +25,7 @@ public class OrderController {
         return ResponseDto.ok(orderService.getAllOrders());
     }
 
-    @GetMapping("selectOne")
+    @GetMapping("selectOrder")
     public ResponseDto getOrderById(@RequestParam Long orderId){
         return ResponseDto.ok(orderService.getOrderById(orderId));
     }
