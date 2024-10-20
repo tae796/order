@@ -16,33 +16,35 @@
 - **Custom Exception Handling**
 
 ## API 사용 예시
-- 주문 추가
-POST /save
+1.  주문 추가
+- POST /save
+
+```json
 {
     "orderId" : "2",
     "customerName" : "taeeun",
     "orderDate" : "2024-03-01 12:12:13",
     "status" : "processing"
 }
+```
+2.  주문 조회
+- GET /selectOrder?orderId=
 
-- 주문 조회
-GET /selectOrder?orderId=
-
-- 주문 상태 변경
-PUT /updateOrder
-
+3.  주문 상태 변경
+- PUT /updateOrder
+```json
 {
     "orderId" : "4",
     "status" : "CANCELED"
 }
-
-- 주문 삭제
-DELETE /deleteOrder
-
+```
+4.  주문 삭제
+- DELETE /deleteOrder
+```json
 {
     "orderId" : "4"
 }
-
+```
 ## 예외처리
 - 모든 예외는 커스텀 예외 클래스를 통해 관리됩니다.
 - 예를 들어, 유효하지 않은 주문 ID를 조회할 경우 OrderNotFoundException이 발생합니다.
